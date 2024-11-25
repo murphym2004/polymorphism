@@ -1,10 +1,11 @@
-package ie.atu.productv3;
+package ie.atu.productv4;
 
-import ie.atu.productv2.Book;
+
+
 
 import java.util.Scanner;
 
-public class ProductApp {
+public class productApp {
 
     public static void main(String[] args) {
         // display a welcome message
@@ -21,7 +22,7 @@ public class ProductApp {
             // either a book object or a software object could be returned from the ProductDb class.
             // We need to update the code so that we can handle either type of object returned.
 
-            Product p = ProductDB.getProduct(productCode);
+            product p = productDB.getProduct(productCode);
 
 
             System.out.println();
@@ -33,7 +34,7 @@ public class ProductApp {
             }
 
             System.out.println();
-            System.out.println("Product count: " + Product.getCount() + "\n");
+            System.out.println("Product count: " + product.getCount() + "\n");
 
             // see if the user wants to continue
             System.out.print("Continue? (y/n): ");
